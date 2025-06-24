@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+#game-board {
+  width: 320px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  background-color: #444;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.card.revealed {
+  background-color: #4caf50;
+}
+
+#status {
+  font-size: 18px;
+  margin-top: 15px;
+}
